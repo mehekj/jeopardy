@@ -5,8 +5,10 @@
   "homepage": "https://jeopardy.brianyu.me/",
   "dependencies": {
     "react": "^18.2.0",
+    "react-countdown": "^2.3.6",
     "react-dom": "^18.2.0",
     "react-ga4": "^2.1.0",
+    "react-h5-audio-player": "^3.10.1",
     "react-transition-group": "^4.3.0"
   },
   "scripts": {

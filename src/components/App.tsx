@@ -5,6 +5,7 @@ import GameLoader from "./GameLoader";
 import JeopardyBoard from "./JeopardyBoard";
 import PlayerChooser from "./PlayerChooser";
 import Scoreboard from "./Scoreboard";
+import Timer from "./Timer";
 import {
   Game,
   GameData,
@@ -150,18 +151,18 @@ function App() {
     }
 
     // See if we should be able to proceed to Double Jeopardy
-    let allowProceedToDouble = round === "single";
-    if (allowProceedToDouble) {
-      board.forEach((category) => {
-        category.clues.forEach((clue) => {
-          if (clue.chosen === undefined) {
-            allowProceedToDouble = false;
-          }
-        });
-      });
-    }
+    // let allowProceedToDouble = round === "single";
+    // if (allowProceedToDouble) {
+    //   board.forEach((category) => {
+    //     category.clues.forEach((clue) => {
+    //       if (clue.chosen === undefined) {
+    //         allowProceedToDouble = false;
+    //       }
+    //     });
+    //   });
+    // }
 
-    let allowProceedToFinal = round === "double";
+    let allowProceedToFinal = round === "single";
     if (allowProceedToFinal) {
       board.forEach((category) => {
         category.clues.forEach((clue) => {
@@ -173,14 +174,14 @@ function App() {
     }
 
     // Allow games configurations to skip Double Jeopardy
-    if (allowProceedToDouble && game.double === undefined) {
-      allowProceedToDouble = false;
-      allowProceedToFinal = true;
-    }
+    // if (allowProceedToDouble && game.double === undefined) {
+    //   allowProceedToDouble = false;
+    //   allowProceedToFinal = true;
+    // }
 
     return (
       <div className="app">
-        {currentCategoryIndex === null &&
+        {/* {currentCategoryIndex === null &&
           currentClueIndex === null &&
           allowProceedToDouble && (
             <div>
@@ -188,7 +189,7 @@ function App() {
                 Proceed to Double Jeopardy
               </button>
             </div>
-          )}
+          )} */}
         {currentCategoryIndex === null &&
           currentClueIndex === null &&
           allowProceedToFinal && (
@@ -224,6 +225,12 @@ function App() {
           }
           stats={false}
         />
+        {currentCategoryIndex !== null && currentClueIndex !== null && (
+          <Timer
+            currentCategoryIndex={currentCategoryIndex}
+            currentClueIndex={currentClueIndex}
+          ></Timer>
+        )}
         <button onClick={downloadGame} className="download">
           Download Game in Progress
         </button>

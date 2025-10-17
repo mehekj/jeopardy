@@ -1,0 +1,17 @@
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.timer-countdown {
+    color: white;
+    font-family: "Korinna", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 64px;
+    padding: 10px;
+}
