@@ -24,6 +24,7 @@ function App() {
   const [players, setPlayers] = useState<Player[]>([]);
   const [round, setRound] = useState<RoundName>(ROUND_SINGLE);
   const [isGameStarted, setIsGameStarted] = useState(false);
+  const [isMusicMuted, setIsMusicMuted] = useState(false);
   const [numCategoriesShown, setNumCategoriesShown] = useState(0);
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState<
     number | null
@@ -181,6 +182,14 @@ function App() {
 
     return (
       <div className="app">
+        <button
+          type="button"
+          className="music-mute"
+          aria-pressed={isMusicMuted}
+          onClick={() => setIsMusicMuted(!isMusicMuted)}
+        >
+          {isMusicMuted ? "Unmute Music" : "Mute Music"}
+        </button>
         {/* {currentCategoryIndex === null &&
           currentClueIndex === null &&
           allowProceedToDouble && (
@@ -229,6 +238,7 @@ function App() {
           <Timer
             currentCategoryIndex={currentCategoryIndex}
             currentClueIndex={currentClueIndex}
+            isMuted={isMusicMuted}
           ></Timer>
         )}
         <button onClick={downloadGame} className="download">
@@ -240,7 +250,19 @@ function App() {
     const final = game.final;
     return (
       <div>
-        <FinalJeopardy final={final} onFinishGame={finishGame} />
+        <button
+          type="button"
+          className="music-mute"
+          aria-pressed={isMusicMuted}
+          onClick={() => setIsMusicMuted(!isMusicMuted)}
+        >
+          {isMusicMuted ? "Unmute Music" : "Mute Music"}
+        </button>
+        <FinalJeopardy
+          final={final}
+          onFinishGame={finishGame}
+          isMuted={isMusicMuted}
+        />
         <Scoreboard
           players={players}
           currentValue={0}

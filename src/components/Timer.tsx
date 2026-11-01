@@ -5,6 +5,7 @@ import songs from "../songs";
 interface TimerProps {
   currentCategoryIndex: number;
   currentClueIndex: number;
+  isMuted: boolean;
 }
 
 export default function Timer(props: TimerProps) {
@@ -17,7 +18,7 @@ export default function Timer(props: TimerProps) {
   useEffect(() => {
     if (countdownStarted && startTime > 0) {
       const countdownInterval = setInterval(() => {
-        const currentTime = new Date().getTime();
+        const currentTime = Date.now();
         let remainingTime = startTime + COUNTDOWN_LENGTH - currentTime;
         if (remainingTime <= 0) {
           audioRef.current?.pause();
@@ -27,10 +28,23 @@ export default function Timer(props: TimerProps) {
 
         setTimeLeft(remainingTime);
       }, 1000);
+
+      return () => clearInterval(countdownInterval);
     }
-  }, [countdownStarted, startTime, timeLeft]);
+  }, [countdownStarted, startTime]);
 
   function startTimer() {
+    if (countdownStarted) {
+      setCountdownStarted(false);
+      setStartTime(-1);
+      setTimeLeft(COUNTDOWN_LENGTH);
+      audioRef.current?.pause();
+      if (audioRef.current) {
+        audioRef.current.currentTime = 0;
+      }
+      return;
+    }
+
     if (audioRef.current) {
       audioRef.current.currentTime = songs[getSongIndex()].start;
       audioRef.current.play();
@@ -50,20 +64,18 @@ export default function Timer(props: TimerProps) {
 
   return (
     <div className="timer">
-      <div
-        className="timer-countdown"
-        onClick={() => {
-          startTimer();
-        }}
-      >
-        {countdownStarted
-          ? timeLeft === 0
-            ? "Time's Up!"
-            : Math.round(timeLeft / 1000)
-          : "Start Timer"}
+      <div className="timer-controls">
+        <div className="timer-countdown" onClick={startTimer}>
+          {countdownStarted
+            ? timeLeft === 0
+              ? "Time's Up!"
+              : Math.round(timeLeft / 1000)
+            : "Start Timer"}
+        </div>
         <audio
           src={`/audio/${songs[getSongIndex()].name}.mp3`}
           ref={audioRef}
+          muted={props.isMuted}
         />
       </div>
     </div>

@@ -5,10 +5,11 @@ import FinalTimer from "./FinalTimer";
 interface FinalJeopardyProps {
   final: FinalRound;
   onFinishGame: () => void;
+  isMuted: boolean;
 }
 
 function FinalJeopardy(props: FinalJeopardyProps) {
-  const { final, onFinishGame } = props;
+  const { final, onFinishGame, isMuted } = props;
 
   const [category, setCategory] = useState(true);
   const [solution, setSolution] = useState(false);
@@ -63,7 +64,7 @@ function FinalJeopardy(props: FinalJeopardyProps) {
           final.clue
         )}
       </div>
-      {!solution && <FinalTimer />}
+      {!solution && <FinalTimer isMuted={isMuted} />}
     </div>
   );
 }

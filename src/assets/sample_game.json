@@ -2,344 +2,191 @@
   "game": {
     "single": [
       {
-        "category": "Diwali Terms",
+        "category": "Single Category 1",
         "clues": [
           {
             "value": 200,
-            "clue": "The meaning of the word 'Diwali' is row of this.",
-            "solution": "What are lights?"
+            "clue": "This is clue 1.1",
+            "solution": "What is the solution to clue 1.1?"
           },
           {
             "value": 400,
-            "clue": "These clay lamps which are traditionally used during Diwali are usually made with a cotton wick soaked in ghee or oil.",
-            "solution": "What are diyas?"
+            "clue": "This is clue 1.2",
+            "solution": "What is the solution to clue 1.2?"
           },
           {
             "value": 600,
-            "clue": "During Diwali it is common to decorate your home with these colorful patterns made on the floor using colored powders or flower petals.",
-            "solution": "What is rangoli?"
+            "clue": "This is clue 1.3",
+            "solution": "What is the solution to clue 1.3?"
           },
           {
             "value": 800,
-            "clue": "This worship practice is performed during Diwali as with all major Hindu holidays.",
-            "solution": "What is puja?"
+            "clue": "This is clue 1.4",
+            "solution": "What is the solution to clue 1.4?"
           },
           {
             "value": 1000,
-            "clue": "This other name for Diwali .",
-            "solution": "What is Deepavali?"
+            "clue": "This is clue 1.5",
+            "solution": "What is the solution to clue 1.5?"
           }
         ]
       },
       {
-        "category": "Religious and Cultural Significance",
+        "category": "Single Category 2",
         "clues": [
           {
             "value": 200,
-            "clue": "For many Hindus Diwali marks the start of this.",
-            "solution": "What is the new year?"
+            "clue": "This is clue 2.1",
+            "solution": "What is the solution to clue 2.1?"
           },
           {
             "value": 400,
-            "clue": "The date of Diwali changes every year based on this calendar.",
-            "solution": "What is the lunar calendar?"
+            "clue": "This is clue 2.2",
+            "solution": "What is the solution to clue 2.2?"
           },
           {
             "value": 600,
-            "clue": "Other than Hindus, members of these two religions also commonly celebrate Diwali.",
-            "solution": "What are Jainism and Sikhism?",
+            "clue": "This is clue 2.3",
+            "solution": "What is the solution to clue 2.3?"
+          },
+          {
+            "value": 800,
+            "clue": "This is clue 2.4",
+            "solution": "What is the solution to clue 2.4?",
             "dailyDouble": true
           },
           {
-            "value": 800,
-            "clue": "Diwali is tied to many myths and legends; most commonly, it celebrates the return of this deity to his kingdom after a 14-year exile.",
-            "solution": "Who is Rama?"
-          },
-          {
             "value": 1000,
-            "clue": "On Diwali, many Hindus worship this goddess of wealth and prosperity.",
-            "solution": "Who is Lakshmi?"
+            "clue": "This is clue 2.5",
+            "solution": "What is the solution to clue 2.5?"
           }
         ]
       },
       {
-        "category": "Celebrations",
+        "category": "Single Category 3",
         "clues": [
           {
             "value": 200,
-            "clue": "These exciting items are often used during Diwali celebrations, both representing the victory of light over darkness and scaring away evil spirits.",
-            "solution": "What are fireworks?"
+            "clue": "This is clue 3.1",
+            "solution": "What is the solution to clue 3.1?"
           },
           {
             "value": 400,
-            "clue": "Many Indian families prepare these sweet treats during Diwali to share with friends and family.",
-            "solution": "What is mithai?"
+            "clue": "This is clue 3.2",
+            "solution": "What is the solution to clue 3.2?"
           },
           {
             "value": 600,
-            "clue": "The festival of Diwali is celebrated over this many days.",
-            "solution": "What is five?"
+            "clue": "This is clue 3.3",
+            "solution": "What is the solution to clue 3.3?"
           },
           {
             "value": 800,
-            "clue": "Preparation for Diwali often begins even before the festival, with doing this to prepare your home.",
-            "solution": "What is cleaning?"
+            "clue": "This is clue 3.4",
+            "solution": "What is the solution to clue 3.4?"
           },
           {
             "value": 1000,
-            "clue": "Surprisingly, this activity is actually considered auspicious during Diwali to bring good luck.",
-            "solution": "What is gambling?"
+            "clue": "This is clue 3.5",
+            "solution": "What is the solution to clue 3.5?"
           }
         ]
       },
       {
-        "category": "Ghosts of Diwali Past",
+        "category": "Single Category 4",
         "clues": [
           {
             "value": 200,
-            "clue": "This game that has been featured at many past Jethani Diwali parties involves a poster and a blindfold.",
-            "solution": "What is Pin the Flame on the Diya?"
+            "clue": "This is clue 4.1",
+            "solution": "What is the solution to clue 4.1?"
           },
           {
             "value": 400,
-            "clue": "These colors were the dress theme of last year's Diwali party",
-            "solution": "What is red and gold?"
+            "clue": "This is clue 4.2",
+            "solution": "What is the solution to clue 4.2?"
           },
           {
             "value": 600,
-            "clue": "Last year's Diwali party took place on this date, the day after Diwali itself.",
-            "solution": "What is November 2nd?"
+            "clue": "This is clue 4.3",
+            "solution": "What is the solution to clue 4.3?"
           },
           {
             "value": 800,
-            "clue": "This Indian restaurant on NJ Route 4 has been the source of catering for many past Diwali parties.",
-            "solution": "What is Mantra?"
+            "clue": "This is clue 4.4",
+            "solution": "What is the solution to clue 4.4?"
           },
           {
             "value": 1000,
-            "clue": "Aside from our current venue, this other Westwood basement has seen its fair share of Diwali celebrations featuring dancing, diya decorating, and dress up.",
-            "solution": "What is the Westwood Public Library?"
+            "clue": "This is clue 4.5",
+            "solution": "What is the solution to clue 4.5?"
           }
         ]
       },
       {
-        "category": "Bad Summaries of the Ramayana (or Something Else?)",
+        "category": "Single Category 5",
         "clues": [
           {
             "value": 200,
-            "clue": "A story in which a boy who is one of many avatars learns to channel his power and defeat evil to restore balance to the world.",
-            "solution": "What is Avatar the Last Airbender?"
+            "clue": "This is clue 5.1",
+            "solution": "What is the solution to clue 5.1?"
           },
           {
             "value": 400,
-            "clue": "A story in which there is an army of monkeys.",
-            "solution": "What is the Wizard of Oz?"
+            "clue": "This is clue 5.2",
+            "solution": "What is the solution to clue 5.2?"
           },
           {
             "value": 600,
-            "clue": "A story in which a man must rescue a princess who is kidnapped by an evil villain and along the way is helped by an unlikely (and hairy) companion. Also he spends some time in the woods with a sage and grows in strength to conquer darkness/evil with the force of light/goodness.",
-            "solution": "What is Star Wars?"
+            "clue": "This is clue 5.3",
+            "solution": "What is the solution to clue 5.3?"
           },
           {
             "value": 800,
-            "clue": "A story in which a man falls in love with a princess who is kidnapped by an evil villain and taken to a far away kingdom. With the help of his brother he journeys through many lands to win her back and also the villain burns to death",
-            "solution": "What is the Super Mario Brothers?"
+            "clue": "This is clue 5.4",
+            "solution": "What is the solution to clue 5.4?"
           },
           {
             "value": 1000,
-            "clue": "In which a young prince is exiled after a deceitful plot by a family member. Out in the jungle he makes some unlikely friends and many years later is able to regain his throne.",
-            "solution": "What is the Lion King?"
-          }
-        ]
-      }
-    ],
-    "double": [
-      {
-        "category": "Double Category 1",
-        "clues": [
-          {
-            "value": 400,
-            "clue": "This is DJ clue 1.1",
-            "solution": "What is the solution to DJ clue 1.1?"
-          },
-          {
-            "value": 800,
-            "clue": "This is DJ clue 1.2",
-            "solution": "What is the solution to DJ clue 1.2?"
-          },
-          {
-            "value": 1200,
-            "clue": "This is DJ clue 1.3",
-            "solution": "What is the solution to DJ clue 1.3?"
-          },
-          {
-            "value": 1600,
-            "clue": "This is DJ clue 1.4",
-            "solution": "What is the solution to DJ clue 1.4?"
-          },
-          {
-            "value": 2000,
-            "clue": "This is DJ clue 1.5",
-            "solution": "What is the solution to DJ clue 1.5?"
+            "clue": "This is clue 5.5",
+            "solution": "What is the solution to clue 5.5?"
           }
         ]
       },
       {
-        "category": "Double Category 2",
+        "category": "Single Category 6",
         "clues": [
           {
+            "value": 200,
+            "clue": "This is clue 6.1",
+            "solution": "What is the solution to clue 6.1?"
+          },
+          {
             "value": 400,
-            "clue": "This is DJ clue 2.1",
-            "solution": "What is the solution to DJ clue 2.1?"
+            "clue": "This is clue 6.2",
+            "solution": "What is the solution to clue 6.2?"
+          },
+          {
+            "value": 600,
+            "clue": "This is clue 6.3",
+            "solution": "What is the solution to clue 6.3?"
           },
           {
             "value": 800,
-            "clue": "This is DJ clue 2.2",
-            "solution": "What is the solution to DJ clue 2.2?"
+            "clue": "This is clue 6.4",
+            "solution": "What is the solution to clue 6.4?"
           },
           {
-            "value": 1200,
-            "clue": "This is DJ clue 2.3",
-            "solution": "What is the solution to DJ clue 2.3?"
-          },
-          {
-            "value": 1600,
-            "clue": "This is DJ clue 2.4",
-            "solution": "What is the solution to DJ clue 2.4?"
-          },
-          {
-            "value": 2000,
-            "clue": "This is DJ clue 2.5",
-            "solution": "What is the solution to DJ clue 2.5?"
-          }
-        ]
-      },
-      {
-        "category": "Double Category 3",
-        "clues": [
-          {
-            "value": 400,
-            "clue": "This is DJ clue 3.1",
-            "solution": "What is the solution to DJ clue 3.1?"
-          },
-          {
-            "value": 800,
-            "clue": "This is DJ clue 3.2",
-            "solution": "What is the solution to DJ clue 3.2?"
-          },
-          {
-            "value": 1200,
-            "clue": "This is DJ clue 3.3",
-            "solution": "What is the solution to DJ clue 3.3?",
-            "dailyDouble": true
-          },
-          {
-            "value": 1600,
-            "clue": "This is DJ clue 3.4",
-            "solution": "What is the solution to DJ clue 3.4?"
-          },
-          {
-            "value": 2000,
-            "clue": "This is DJ clue 3.5",
-            "solution": "What is the solution to DJ clue 3.5?"
-          }
-        ]
-      },
-      {
-        "category": "Double Category 4",
-        "clues": [
-          {
-            "value": 400,
-            "clue": "This is DJ clue 4.1",
-            "solution": "What is the solution to DJ clue 4.1?"
-          },
-          {
-            "value": 800,
-            "clue": "This is DJ clue 4.2",
-            "solution": "What is the solution to DJ clue 4.2?"
-          },
-          {
-            "value": 1200,
-            "clue": "This is DJ clue 4.3",
-            "solution": "What is the solution to DJ clue 4.3?"
-          },
-          {
-            "value": 1600,
-            "clue": "This is DJ clue 4.4",
-            "solution": "What is the solution to DJ clue 4.4?"
-          },
-          {
-            "value": 2000,
-            "clue": "This is DJ clue 4.5",
-            "solution": "What is the solution to DJ clue 4.5?"
-          }
-        ]
-      },
-      {
-        "category": "Double Category 5",
-        "clues": [
-          {
-            "value": 400,
-            "clue": "This is DJ clue 5.1",
-            "solution": "What is the solution to DJ clue 5.1?"
-          },
-          {
-            "value": 800,
-            "clue": "This is DJ clue 5.2",
-            "solution": "What is the solution to DJ clue 5.2?"
-          },
-          {
-            "value": 1200,
-            "clue": "This is DJ clue 5.3",
-            "solution": "What is the solution to DJ clue 5.3?"
-          },
-          {
-            "value": 1600,
-            "clue": "This is DJ clue 5.4",
-            "solution": "What is the solution to DJ clue 5.4?"
-          },
-          {
-            "value": 2000,
-            "clue": "This is DJ clue 5.5",
-            "solution": "What is the solution to DJ clue 5.5?"
-          }
-        ]
-      },
-      {
-        "category": "Double Category 6",
-        "clues": [
-          {
-            "value": 400,
-            "clue": "This is DJ clue 6.1",
-            "solution": "What is the solution to DJ clue 6.1?"
-          },
-          {
-            "value": 800,
-            "clue": "This is DJ clue 6.2",
-            "solution": "What is the solution to DJ clue 6.2?"
-          },
-          {
-            "value": 1200,
-            "clue": "This is DJ clue 6.3",
-            "solution": "What is the solution to DJ clue 6.3?"
-          },
-          {
-            "value": 1600,
-            "clue": "This is DJ clue 6.4",
-            "solution": "What is the solution to DJ clue 6.4?"
-          },
-          {
-            "value": 2000,
-            "clue": "This is DJ clue 6.5",
-            "solution": "What is the solution to DJ clue 6.5?"
+            "value": 1000,
+            "clue": "This is clue 6.5",
+            "solution": "What is the solution to clue 6.5?"
           }
         ]
       }
     ],
     "final": {
-      "category": "Diwali Around the World",
-      "clue": "These 10 countries, outside of India, recognize Diwali as a national holiday.",
-      "solution": "What are Fiji, Guyana, Malaysia, Mauritius, Myanmar, Nepal, Singapore, Sri Lanka, Suriname, Trinidad and Tobago?"
+      "category": "Final Category",
+      "clue": "This is the Final Jeopardy clue.",
+      "solution": "What is the solution to the Final Jeopardy clue?"
     }
   }
 }

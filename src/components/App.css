@@ -20,3 +20,22 @@
   margin-top: 100px;
   border-radius: 3px;
 }
+
+.music-mute {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1000;
+  padding: 8px 12px;
+  color: white;
+  background: rgb(0 0 0 / 55%);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.music-mute:hover,
+.music-mute:focus-visible {
+  background: rgb(0 0 0 / 80%);
+}
