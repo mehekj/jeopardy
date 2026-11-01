@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FinalRound } from "../types";
+import FinalTimer from "./FinalTimer";
 
 interface FinalJeopardyProps {
   final: FinalRound;
@@ -62,6 +63,7 @@ function FinalJeopardy(props: FinalJeopardyProps) {
           final.clue
         )}
       </div>
+      {!solution && <FinalTimer />}
     </div>
   );
 }

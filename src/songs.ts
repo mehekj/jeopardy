@@ -1,17 +1,30 @@
 const songs = [
-  {
-    "name": "desi_girl",
-    "start": 56
-  },
-  {
-    "name": "bole_chudiyan",
-    "start": 51
-  },
-  {
-    "name": "twist",
-    "start": 74.5
-  }
-
-]
+  { name: "abhi_toh_party", start: 53 },
+  { name: "badtameez_dil", start: 86 },
+  { name: "balam_pichkari", start: 73 },
+  { name: "bole_chudiyan", start: 51 },
+  { name: "chammak_challo", start: 52 },
+  { name: "dance_pe_chance", start: 37 },
+  { name: "deewangi", start: 63 },
+  { name: "desi_boyz", start: 49 },
+  { name: "desi_girl", start: 56 },
+  { name: "dilliwaali_girlfriend", start: 57 },
+  { name: "disco_song", start: 70 },
+  { name: "gallan_goodiyaan", start: 48 },
+  { name: "ghagra", start: 74 },
+  { name: "hookah_bar", start: 44 },
+  { name: "jalebi_bai", start: 42 },
+  { name: "koi_kahe_kehta_rahe", start: 73 },
+  { name: "radha", start: 79.5 },
+  { name: "sadi_gali", start: 45 },
+  { name: "saturday", start: 44 },
+  { name: "senorita", start: 46 },
+  { name: "sheila_ki_jawani", start: 47.5 },
+  { name: "subha_hone_na_de", start: 65 },
+  { name: "sunny_sunny", start: 14 },
+  { name: "time_to_disco", start: 62 },
+  { name: "wheres_the_party", start: 88 },
+  { name: "jai_ho", start: 20 },
+];
 
 export default songs;

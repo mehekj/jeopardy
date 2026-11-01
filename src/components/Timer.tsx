@@ -8,7 +8,7 @@ interface TimerProps {
 }
 
 export default function Timer(props: TimerProps) {
-  const COUNTDOWN_LENGTH = 15000;
+  const COUNTDOWN_LENGTH = 30000;
   const [countdownStarted, setCountdownStarted] = useState(false);
   const [startTime, setStartTime] = useState(-1);
   const [timeLeft, setTimeLeft] = useState(COUNTDOWN_LENGTH);
@@ -60,7 +60,7 @@ export default function Timer(props: TimerProps) {
           ? timeLeft === 0
             ? "Time's Up!"
             : Math.round(timeLeft / 1000)
-          : "Start"}
+          : "Start Timer"}
         <audio
           src={`/audio/${songs[getSongIndex()].name}.mp3`}
           ref={audioRef}
