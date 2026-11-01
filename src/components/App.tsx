@@ -96,11 +96,11 @@ function App() {
     setCurrentCategoryIndex(null);
   }
 
-  function proceedToDouble() {
-    logEvent("Proceed to Double Jeopardy");
-    setNumCategoriesShown(0);
-    setRound("double");
-  }
+  //   function proceedToDouble() {
+  //     logEvent("Proceed to Double Jeopardy");
+  //     setNumCategoriesShown(0);
+  //     setRound("double");
+  //   }
 
   function proceedToFinal() {
     logEvent("Proceed to Final Jeopardy");
