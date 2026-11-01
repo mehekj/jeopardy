@@ -30,3 +30,7 @@ hr {
   margin-right: auto;
   font-family: sans-serif;
 }
+
+.game-loader-error {
+  color: #ffb3b3;
+}

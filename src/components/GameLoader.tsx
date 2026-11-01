@@ -12,15 +12,15 @@ interface GameLoaderProps {
 
 function GameLoader(props: GameLoaderProps) {
   const { updateGame } = props;
+  const [loadError, setLoadError] = React.useState("");
 
   function validateGame(data: any): GameData | null {
-    const game = data.game;
-    if (game === undefined) {
+    if (data?.game === undefined) {
       console.log("Game key not found in JSON payload.");
       return null;
     }
     // TODO: additional validation
-    return game;
+    return data as GameData;
   }
 
   function handleGameUpload(event: ChangeEvent<HTMLInputElement>) {
@@ -32,11 +32,36 @@ function GameLoader(props: GameLoaderProps) {
       const data: any = JSON.parse(text);
       const game = validateGame(data);
       if (game !== null) {
-        updateGame(data);
+        updateGame(game);
       } else {
         console.log("Invalid game.");
       }
     });
+  }
+
+  async function loadDiwaliGame() {
+    logEvent("Load Diwali 2025 Game");
+    setLoadError("");
+
+    try {
+      const response = await fetch("/diwali2025.json");
+      if (!response.ok) {
+        throw new Error("Unable to load the Diwali 2025 game.");
+      }
+
+      const game = validateGame(await response.json());
+      if (game === null) {
+        throw new Error("The Diwali 2025 game file is invalid.");
+      }
+
+      updateGame(game);
+    } catch (error) {
+      setLoadError(
+        error instanceof Error
+          ? error.message
+          : "Unable to load the Diwali 2025 game."
+      );
+    }
   }
 
   function downloadSampleGame() {
@@ -53,7 +78,17 @@ function GameLoader(props: GameLoaderProps) {
   return (
     <div className="game-loader">
       <h1>Jeopardy Player</h1>
-      <p>Designed by Brian Yu</p>
+      <p>
+        Originally designed by brianyu28 on github (
+        <a
+          href="https://github.com/mehekj/jeopardy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          fork
+        </a>
+        ).
+      </p>
       <hr />
       <h2>Play a Game</h2>
       <input type="file" name="file" onChange={handleGameUpload} />
@@ -66,6 +101,12 @@ function GameLoader(props: GameLoaderProps) {
           <button onClick={downloadSampleGame}>Download Configuration</button>
         </div>
       </div>
+      <hr />
+      <h2>Play Jethani Diwali Party 2025 Game</h2>
+      <button type="button" onClick={loadDiwaliGame}>
+        Play Diwali 2025 Game
+      </button>
+      {loadError && <p className="game-loader-error">{loadError}</p>}
     </div>
   );
 }
